@@ -68,7 +68,7 @@ function setup()
      {
       stroke(0);
       this.v = this.a*(this.t-this.t0)+this.v0
-      text(this.v.toFixed(2), 100, yPosition + 11 * 4 - 4);
+      text(this.v.toFixed(2)+" m/s", 100, yPosition + 11 * 4 - 4);
       text("v = a * (t-t0)+v0", 130,80)
      }
      
@@ -76,7 +76,7 @@ function setup()
      {
       stroke(0);
       this.v0 = this.v-this.a*(this.t-this.t0)
-      text(this.v0.toFixed(2), 100, yPosition + 17 * 4 - 4);
+      text(this.v0.toFixed(2)+" m/s", 100, yPosition + 17 * 4 - 4);
       text("v0 = v-a * (t-t0)", 130,80)
      }
 
@@ -84,7 +84,7 @@ function setup()
      {
       stroke(0);
       this.t = ((this.v-this.v0)/this.a)+this.t0
-      text(this.t.toFixed(2), 100, yPosition + 23 * 4 - 4);
+      text(this.t.toFixed(2)+" sec", 100, yPosition + 23 * 4 - 4);
       text("t = ((v-v0)/a)+t0", 130,80)
      }
      
@@ -92,7 +92,7 @@ function setup()
      {
       stroke(0);
       this.t0 = this.t-(this.v-this.v0)/this.a
-      text(this.t0.toFixed(2), 100, yPosition + 30 * 4 - 4);
+      text(this.t0.toFixed(2)+" sec", 100, yPosition + 30 * 4 - 4);
       text("t0 = t-(v-v0)/a", 130,80)
      }
      
@@ -100,7 +100,7 @@ function setup()
      {
       stroke(0);
       this.a = (this.v-this.v0)/(this.t-this.t0)
-      text(this.a.toFixed(2), 100, yPosition + 5 * 4 - 4);
+      text(this.a.toFixed(2)+" m/s^2", 100, yPosition + 5 * 4 - 4);
       text("a = (v-v0)/(t-t0)", 130,80)
      }
      

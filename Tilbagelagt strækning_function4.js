@@ -57,7 +57,7 @@ function setup()
      {
       stroke(0);
       this.s = 1/2*this.a*this.t*this.t;
-      text(this.s.toFixed(2), 100, yPosition + 5 * 4 - 4);
+      text(this.s.toFixed(2)+" m", 100, yPosition + 5 * 4 - 4);
       text("s = 1/2 * a * t * t", 130,80)
      }
      
@@ -65,7 +65,7 @@ function setup()
      {
       stroke(0);
       this.a = this.s/(1/2*this.t*this.t);
-      text(this.a.toFixed(2), 100, yPosition + 11 * 4 - 4);
+      text(this.a.toFixed(2)+"m/s^2", 100, yPosition + 11 * 4 - 4);
       text("a = s/(1/2 * t * t)", 130,80)
      }
 
@@ -73,7 +73,7 @@ function setup()
      {
       stroke(0);
       this.t = sqrt(this.s/(1/2*this.a));
-      text(this.t.toFixed(2), 100, yPosition + 17 * 4 - 4);
+      text(this.t.toFixed(2)+" sec", 100, yPosition + 17 * 4 - 4);
       text("t = sqrt(s/(1/2 * a))", 130,80)
      }
      

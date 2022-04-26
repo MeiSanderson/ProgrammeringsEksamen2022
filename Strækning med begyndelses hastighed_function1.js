@@ -101,14 +101,9 @@ function setup()
       stroke(0);
       this.t = (-this.v0+sqrt(this.v0*this.v0-4*(1/2*this.a)*(this.s0-this.s)))/2*1/2*this.a
       text("t = (-v0+sqrt(v0 * v0-4 * (1/2 * a) * (s0-s))) / 2 * 1/2 * a", 100,80)
-      
-     }
-     
-      if(this.t<0)
-     {
-      this.t = (-this.v0-sqrt(this.v0*this.v0-4*(1/2*this.a)*(this.s0-this.s)))/2*1/2*this.a
       text(this.t.toFixed(2), 100, yPosition + 10 * 4 - 4);
      }
+     
    }
      
     
