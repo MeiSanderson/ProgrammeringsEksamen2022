@@ -50,41 +50,45 @@ function setup()
 
    function værdi()
    {
-    v = float(inputFelt0.value());
-    a = float(inputFelt1.value());
-    t = float(inputFelt2.value());
-    v0 = float(inputFelt3.value());
+    this.v = float(inputFelt0.value());
+    this.a = float(inputFelt1.value());
+    this.t = float(inputFelt2.value());
+    this.v0 = float(inputFelt3.value());
     
     
 
      
     
-     if(isNaN(v))
+     if(isNaN(this.v))
      {
-      stroke(200, 50, 99);
-      v = a*t+v0
-      text(v.toFixed(2), 100, yPosition + 5 * 4 - 4);
+      stroke(0);
+      this.v = this.a*this.t+this.v0
+      text(this.v.toFixed(2), 100, yPosition + 5 * 4 - 4);
+      text("v = a * t + v0", 130,80)
      }
      
-      if(isNaN(a))
+      if(isNaN(this.a))
      {
-      stroke(200, 50, 99);
-      a = (v-v0)/t
-      text(a.toFixed(2), 100, yPosition + 10 * 4 - 4);
+      stroke(0);
+      this.a = (this.v-this.v0)/this.t
+      text(this.a.toFixed(2), 100, yPosition + 10 * 4 - 4);
+      text("a = (v-v0)/t", 130,80)
      }
 
-      if(isNaN(t))
+      if(isNaN(this.t))
      {
-      stroke(200, 50, 99);
-      t = (v-v0)/a
-      text(t.toFixed(2), 100, yPosition + 17 * 4 - 4);
+      stroke(0);
+      this.t = (this.v-this.v0)/this.a
+      text(this.t.toFixed(2), 100, yPosition + 17 * 4 - 4);
+      text("t = (v-v0)/a", 130,80)
      }
      
      if(isNaN(v0))
      {
-      stroke(200, 50, 99);
-      v0 = v-a*t 
-      text(v0.toFixed(2), 100, yPosition + 23 * 4 - 4);
+      stroke(0);
+      this.v0 = this.v-this.a*this.t 
+      text(this.v0.toFixed(2), 100, yPosition + 23 * 4 - 4);
+      text("v0 = v-a * t", 130,80)
      }
     
      
